@@ -11,6 +11,11 @@
     right: 20px;
 }
 
+.hero .btn-get-started {
+  
+  flex-flow: row-reverse;
+}
+
 
   @media (max-width:767px){
 
