@@ -1,0 +1,30 @@
+* {
+  direction: ltr !important;
+  /* font-family: 'Open Sans' !important; */
+}
+
+.lang-icon {
+    width: fit-content;
+    position: absolute;
+    z-index: 10;
+    top: 17px;
+    left: 20px;
+}
+
+.main-button .branchs {
+    padding: 7px 37px !important;
+}
+
+@media (max-width:767px){
+
+
+  }
+@media (min-width:767px){
+
+}
+
+
+
+
+
+
