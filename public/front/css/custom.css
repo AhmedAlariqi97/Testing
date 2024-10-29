@@ -1,15 +1,22 @@
 
-* {
-    --primary: #FBAF02;
-    --second: #ECF9FF;
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #012970; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #4154f1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
 
-    --opacity-50: #1F417280;
-    --opacity-100: #1F4172;
+:root {
+  --nav-color: #012970;  /* The default color of the main navmenu links */
+  --nav-hover-color: #4154f1; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #4154f1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
 
-    --primary-backgrooud: #110d0a;
-
-
-  }
   body[data-font=opensans],body[data-font=opensans]
   button,body[data-font=opensans]
   h1,body[data-font=opensans] h2,body[data-font=opensans]
@@ -25,125 +32,9 @@ html {
 /* background: radial-gradient(circle, #110d0a 24%, #FBAF02 52%); */
 
 
-.landing-logo {
-    position: relative;
-    z-index: 5;
-    background: radial-gradient(110.39% 112.39% at 50.13% 70.61%, #FBAF02 -123.3%, #000000 100%);
-    min-height: 230px;
-    box-shadow: -1px 78px 204px 1px rgba(251, 175, 2,0.41);
-    -webkit-box-shadow: -1px 78px 204px 1px rgba(251, 175, 2,0.41);
-    -moz-box-shadow: -1px 78px 204px 1px rgba(251, 175, 2,0.41);
-}
-.landing-logo .cover-logo-img {
-    margin-top: 33px;
-    width: 145px;
-}
-/* .landing-logo .overly {
-    background: radial-gradient(60.39% 115.39% at 50.13% 39.61%, #FBAF02 -73.3%, #000000 100%);
-    z-index: 1;
-    position: absolute;
-    height: 300px;
-    width: 95%;
-} */
-.landing {
-    /* -webkit-mask-image: linear-gradient(transparent, red);
-    mask-image: linear-gradient(transparent, red); */
-    /* -webkit-mask-image: linear-gradient(180deg, #FBAF02 5%, rgb(219, 44, 44) 68%, rgb(158, 49, 49) 100%, transparent 95%);
-    mask-image: linear-gradient(180deg, #FBAF02 5%, rgb(173, 37, 37) 68%, rgb(154, 34, 34) 100%, transparent 95%); */
-    margin-top: -1px;
-}
-
-.main-button .button-sec .one,
-.main-button .button-sec .tow {
-    margin: 0 35px;
-}
-.main-button .menu {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 7px 65px;
-    font-size: 24px;
-}
-.main-button .branchs {
-    background-color: var(--primary-backgrooud);
-    border: solid 1px var(--primary);
-    color: #fff;
-    padding: 7px 65px;
-    font-size: 24px;
-}
-
-.social-media p {
-    color: #fff;
-}
-.social-media .links .social-link {
-    margin: 10px;
-    padding: 7px 12px;
-    background-color: #fff;
-    color: var(--primary-backgrooud);
-    border-radius: 7px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
-}
-.social-media .links .social-link:hover {
-    /* transform: scale(1.3) !important;
-    transition: transform 0.8s ease !important; */
-    -webkit-transform: translateY(-7px);
-    transform: translateY(-7px);
-    transition: .6s;
-    cursor: pointer;
-}
-.social-media .links li:hover,
-.main-button .menu:hover,
-.main-button .branchs:hover,
-.footer .location:hover,
-.footer .phone:hover {
-    /* transform: scale(1.3) !important;
-    transition: transform 0.8s ease !important; */
-    -webkit-transform: translateY(-7px);
-    transform: translateY(-7px);
-    transition: .6s;
-    cursor: pointer;
-}
 
 
-.footer {
-    background-color: var(--primary-backgrooud);
-    color: #fff;
-    margin-top: -1px;
-}
-.footer .location {
-    background-color: #fff;
-    color: var(--primary-backgrooud);
-    padding: 6px 40px;
-    font-size: 24px;
-}
-.footer .phone {
-    color: #fff;
-    margin-top: -8px;
-}
-.footer .copy-right {
-    width: fit-content;
-    background-color: #1F41721A;
-    margin: auto;
-    padding: 7px 40px;
-}
-.btn-close {
-    opacity: 1 !important;
-}
-.modal-content {
-    margin-top: 105px;
-    background-color: #00000069;
-    color: #fff !important;
-}
-.modal-body .branch-info {
-    background-color: var(--primary-backgrooud);
-    color: #fff;
-    border-radius: 6px;
-    padding: 7px;
-    margin: 21px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    border: 0.01rem solid #fff;
-}
+
 
   /* buttons of themeicons coler */
 
@@ -352,6 +243,118 @@ html {
         margin: 8px !important;
         padding: 12px 12px !important;
     }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0 60px 0;
+  display: flex;
+  align-items: center;
+  background: url(../images/hero-bg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.hero p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 5px 0 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.hero .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.hero .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.hero .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.hero .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  color: var(--default-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero .btn-watch-video i {
+  color: var(--accent-color);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover {
+  color: var(--accent-color);
+}
+
+.hero .btn-watch-video:hover i {
+  color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 

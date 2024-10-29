@@ -57,48 +57,28 @@
 
 </div>
 
-<section class="landing-logo">
-    <div class="overly"></div>
-    <div class="row">
-        <div class="col-12">
-         {{-- <img src="{{asset('front\images\b2_burger_logo_1.png')}}" class="cover-logo-img">
-          <img src="{{asset('assets/uploaded_images/' . $images['Image_B2_burger_logo'][0]['image'] ?? '')}}" class="cover-logo-img">--}}
-        </div>
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+
+<div class="container">
+  <div class="row gy-4">
+    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+      <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+      <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
+      <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
+        <a href="#about" class="btn-get-started">Get Started <i class="bi bi-arrow-right"></i></a>
+        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+      </div>
     </div>
-</section>
-
-<section class="landing">
-        <div class="row">
-            <div class="m-0 p-0">
-               {{-- <img src="{{asset('uploaded_images\8-1700936418.png')}}" class="cover-img">
-               <img src="{{asset('assets/uploaded_images/' . $images['Image_burger_section2'][0]['image'] ?? '')}}" class="cover-img">--}}
-
-            </div>
-        </div>
-</section>
-
-<section class="main-button">
-    <div class="container">
-        <div class="button-sec">
-            <div class="one fadeInUp animated">
-                <a href="" class="btn menu">
-                <img src="{{asset('front\images\book_add.png')}}" class="icon-img">
-                {{ __('front.menu') }}
-                </a>
-            </div>
-            <div class="tow fadeInUp animated">
-                <a href="" class="btn branchs" data-bs-toggle="modal" data-bs-target="#branchModal">
-                   <img src="{{asset('front\images\location.png')}}" class="icon-img">
-                   {{ __('front.branchs') }}
-                </a>
-                <!-- Button trigger modal -->
-                    <!-- <button type="button" class="btn btn-primary">
-                    Launch demo modal
-                    </button> -->
-            </div>
-        </div>
+    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+      <img src="{{asset('front\images\hero-img.png')}}" class="img-fluid animated" alt="">
     </div>
-</section>
+  </div>
+</div>
+
+</section><!-- /Hero Section -->
+
+
 
 
 

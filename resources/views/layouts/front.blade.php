@@ -29,6 +29,9 @@
 
     <link rel="stylesheet" href="{{ asset('front/css/custom.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap-icons/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/css/glightbox/css/glightbox.min.css') }}">
+
     @if (App::getLocale() == 'en')
         <link rel="stylesheet" href="{{ asset('front/css/styleLTR.css') }}">
     @else
