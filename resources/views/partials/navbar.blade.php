@@ -28,7 +28,7 @@
                     @if (App::getLocale() == 'en')
                         <i class='flag-icon flag-icon-us flag-icon-squared rounded-circle fs-3 me-1'></i>
                     @elseif (App::getLocale() == 'ar')
-                        <i class='flag-icon flag-icon-ye flag-icon-squared rounded-circle fs-3 me-1'></i>
+                        <i class='flag-icon flag-icon-sa flag-icon-squared rounded-circle fs-3 me-1'></i>
                     @endif
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
