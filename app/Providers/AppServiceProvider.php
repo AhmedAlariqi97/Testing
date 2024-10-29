@@ -2,7 +2,13 @@
 
 namespace App\Providers;
 
+
 use Illuminate\Support\ServiceProvider;
+use Spatie\Translatable\Facades\Translatable;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Schema;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +17,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        Translatable::fallback(
+            fallbackAny: true,
+        );
     }
 
     /**
@@ -19,6 +27,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // App::setLocale('ar');
+        // LaravelLocalization::getLocalizedURL('ar', null, [], true);
+
+
+        Paginator::useBootstrap();
+        Schema::defaultStringLength(191);
     }
 }
